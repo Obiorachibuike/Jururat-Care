@@ -5,11 +5,11 @@
       "if": [["!exists", "node_modules"]],
       "then": ["npm/install-dep", "npm/start"],
       "else": {
-        "if": [["!urlExists", "http://localhost:9960"]],
+        "if": [["!urlExists", "http://localhost:5000"]],
         "then": "npm/start"
       }
     },
-    "url": "http://localhost:9960",
+    "url": "http://localhost:5000",
     "ignoreCurrent": true
   }
 }
